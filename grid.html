@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grid Example</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        div.container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(10, minmax(100px, auto));
+            /* grid-auto-rows: minmax(200px, auto); */
+            grid-row-gap: 10px;
+            grid-column-gap: 10px;
+
+            
+            background-color: #f5f5f5;
+            color: #fff;
+            text-align: center;
+            margin: auto;
+            padding: 2%;
+        }
+
+        div.item{
+            background-color: #5BCCC0;
+            padding: 5%;
+        }
+
+        div.item:nth-child(even){
+            background-color: #DE6AEA;
+        }
+
+        div.item-one{
+            grid-column: 1 / 3;
+            grid-row: 1 / 2;
+        }
+
+        div.item-two{
+            grid-column: 3 / 4;
+            grid-row: 1 / 3;
+        }
+
+        div.item-three{
+            grid-column: 1 / 3;
+            grid-row: 2 / 3;
+        }
+
+        div.item-four{
+            grid-column: 1 / 4;
+            grid-row: 3 / 4;
+        }
+
+        div.item-five{
+            grid-column: 1 / 2;
+            grid-row: 4 / 7;
+        }
+
+        div.item-six{
+            grid-column: 2 / 4;
+            grid-row: 4 / 5;
+        }
+
+        div.item-seven{
+            grid-column: 2 / 4;
+            grid-row: 5 / 6;
+        }
+
+        div.item-eight{
+            grid-column: 2 / 4;
+            grid-row: 6 / 7;
+        }
+
+        div.item-nine{
+            grid-column: 1 / 4;
+            grid-row: 7 / 8;
+        }
+
+        div.item-ten{
+            grid-column: 1 / 2;
+            grid-row: 8 / 9;
+        }
+
+        div.item-eleven{
+            grid-column: 1 / 2;
+            grid-row: 9 / 10;
+        }
+
+        div.item-twelve{
+            grid-column: 1 / 2;
+            grid-row: 10 / 11;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-one">1</div>
+        <div class="item item-two">2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+        <div class="item item-three">3</div>
+        <div class="item item-four">4</div>
+        <div class="item item-five">5</div>
+        <div class="item item-six">6</div>
+        <div class="item item-seven">7</div>
+        <div class="item item-eight">8</div>
+        <div class="item item-nine">9</div>
+        <div class="item item-ten">10</div>
+        <div class="item item-eleven">11</div>
+        <div class="item item-twelve">12</div>
+    </div>
+</body>
+</html>

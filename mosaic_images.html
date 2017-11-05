@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mosaic Gallery</title>
+
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            color: #080808;
+            background-color: rgb(92, 91, 91);
+        }
+
+        #mosaic-grid{
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-auto-rows: minmax(100px, auto);
+            grid-gap: 10px;
+
+            padding: 0 50px;
+            padding-bottom: 50px;
+            margin: 0 auto;
+            max-width: 920;
+        }
+
+        #mosaic-grid > *{
+            background-color: rgb(255, 255, 255);
+            padding: 8px;
+        }
+
+        /* Using Span we can create a reusable pattern */
+        .mosaic-header{
+            /* To place text in center */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 10px;
+            grid-column: span 7;
+            grid-row: span 1;
+        }
+        .mosaic-item-one{
+            grid-column: span 3;
+            grid-row: span 4;
+
+            /* To make img fit perfectly */
+            display: flex;
+        }
+
+        .mosaic-item-two{
+            grid-column: span 4;
+            grid-row: span 3;
+
+            /* To make img fit perfectly */
+            display: flex;
+        }
+
+        .mosaic-item-three{
+            grid-column: span 4;
+            grid-row: span 4;
+
+            /* To make img fit perfectly */
+            display: flex;
+        }
+
+        .mosaic-item-four{
+            grid-column: span 3;
+            grid-row: span 4;
+
+            /* To make img fit perfectly */
+            display: flex;
+        }
+
+        .mosaic-item-five{
+            grid-column: span 4;
+            grid-row: span 3;
+
+            /* To make img fit perfectly */
+            display: flex;
+        }
+
+        .mosaic-item-six{
+            grid-column: span 3;
+            grid-row: span 4;
+
+            /* To make img fit perfectly */
+            display: flex;
+        }
+
+        .mosaic-item-seven{
+            grid-column: span 4;
+            grid-row: span 3;
+
+            /* To make img fit perfectly */
+            display: flex;
+        }
+
+        .mosaic-item-eight{
+            grid-column: span 3;
+            grid-row: span 1;
+
+            /* To place text in center */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        img{
+            max-width: 100%;
+            max-height: 100%;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="mosaic-grid">
+        <header class="mosaic-header">Mosaic Gallery Example</header>
+        <div class="mosaic-item-one">
+            <img src="img/vert1.jpg" alt="">
+        </div>
+        <div class="mosaic-item-two">
+            <img src="img/horz1.jpg" alt="">
+        </div>
+        <div class="mosaic-item-three">
+            <img src="img/square.jpg" alt="">
+        </div>
+        <div class="mosaic-item-four">
+            <img src="img/vert2.jpg" alt="">
+        </div>
+        <div class="mosaic-item-five">
+            <img src="img/horz2.jpg" alt="">
+        </div>
+        <div class="mosaic-item-six">
+            <img src="img/vert3.jpg" alt="">
+        </div>
+        <div class="mosaic-item-seven">
+            <img src="img/horz3.jpg" alt="">
+        </div>
+        <div class="mosaic-item-eight">Created by dimkirt</div>
+        
+        <!-- Reuse pattern -->
+        <div class="mosaic-item-one">
+            <img src="img/vert1.jpg" alt="">
+        </div>
+        <div class="mosaic-item-two">
+            <img src="img/horz1.jpg" alt="">
+        </div>
+        <div class="mosaic-item-three">
+            <img src="img/square.jpg" alt="">
+        </div>
+        <div class="mosaic-item-four">
+            <img src="img/vert2.jpg" alt="">
+        </div>
+        <div class="mosaic-item-five">
+            <img src="img/horz2.jpg" alt="">
+        </div>
+        <div class="mosaic-item-six">
+            <img src="img/vert3.jpg" alt="">
+        </div>
+        <div class="mosaic-item-seven">
+            <img src="img/horz3.jpg" alt="">
+        </div>
+        <div class="mosaic-item-eight">Created by dimkirt</div>
+        
+    </div>
+</body>
+</html>
